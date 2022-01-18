@@ -1,0 +1,29 @@
+ALGORITHM zoo
+VAR
+  c:CHAR:='';
+   nbchar:INTEGER:=0;
+   nbword:INTEGER:=0;
+   nbvoy:=0;
+
+
+BEGIN
+
+  WHILE ( c<>'.') DO
+    Read(c);
+    nbchar:=nbchar+1;
+
+    IF(c=" ")THEN
+    nbword:=nbword+1;
+    END_IF
+
+   IF (c in['a','e','y','o','i','u'])THEN
+   nbvoy:=nbvoy+1;
+    END_IF
+
+END_WHILE
+
+ Write("The length of the sentence is ",nbchar);
+    Write("The number of words in the sentence is ",nbword+1);
+    Write("he number of vowels in the sentence. is ",nbvoy);
+    
+END
