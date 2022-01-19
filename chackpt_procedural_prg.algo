@@ -1,0 +1,23 @@
+PROCEDURE dot(v1,v2:ARRAY_OF INTEGER , VAR ps:INTEGER)
+VAR
+    i:INTEGER
+BEGIN
+   IF(v1.length<> v2.length) THEN{
+    Write("we can not calculate")
+}ELSE{
+   
+       ps= v1[0]*v2[0]+v1[1]*v2[1]
+    }
+END
+
+ALGORITHM algorithm_name
+VAR
+   v1,v2: ARRAY_OF INTEGER [10];
+   ps:INTEGER
+BEGIN
+    ps=0
+  dot(v1,v2,ps)
+  if(ps=0){
+      Write("orthogo")
+  }
+END
